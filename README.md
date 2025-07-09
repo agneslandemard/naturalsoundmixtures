@@ -5,7 +5,7 @@
 This repository contains the Matlab code used for the analysis and figure generation presented in:
 Landemard A, Bimbard C, Boubenec Y. **Hierarchical encoding of natural sound mixtures in ferret auditory cortex**. _eLife_. 2025. 14:RP106628, doi: [10.7554/eLife.106628](https://doi.org/10.7554/eLife.106628)
 
-The code is designed to process the functional ultrasound imaging (fUSI) dataset publicly available at [https://doi.org/10.5281/zenodo.15800440].
+The code is designed to process the functional ultrasound imaging (fUSI) dataset publicly available on [Zenodo](https://doi.org/10.5281/zenodo.15800440).
 
 This repository allows users to:
 *   Load the preprocessed fUSI data.
@@ -28,7 +28,7 @@ If you use this code or data in your work, please cite:
 
 *   **Matlab:** Version R2022b or later.
 *   **Required Toolboxes:** Signal Processing Toolbox, Statistics and Machine Learning Toolbox.
-*   **Dataset:** The corresponding dataset must be downloaded separately from [https://doi.org/10.5281/zenodo.15800440].
+*   **Dataset:** The corresponding dataset must be downloaded separately from [Zenodo](https://doi.org/10.5281/zenodo.15800440).
 
 ## Installation / Setup
 
@@ -42,19 +42,15 @@ If you use this code or data in your work, please cite:
     ```matlab
     startup; 
     ```
-    Alternatively, manually add the main code directories and any subdirectories containing functions to your Matlab path using `addpath`.
-    ```matlab
-    addpath(genpath('/naturalsoundmixtures')); % Add repo and all subfolders to path
-    ```
 
 ## Data Setup
 
-This code relies on the dataset available at [https://doi.org/10.5281/zenodo.15800440]. Please download the dataset and organize the files as described in the dataset documentation.
+This code relies on the dataset available on [Zenodo](https://doi.org/10.5281/zenodo.15800440). Please download the dataset and organize the files as described in the dataset documentation.
 
 The code needs to know where the dataset files are located on your system.
 
 1.  **Option 1: Configure a path variable:**
-    Open the `startup.m` (or similar) file in the repository root.
+    Open the `startup.m` file in the repository root.
     Set the `glob_path` and optionally `metrics_path` variable to the absolute path where you downloaded the dataset files.
     ```matlab
     % startup.m
